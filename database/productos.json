@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "nombre": "Audífonos Over-Ear ANC Studio Pro",
+    "categoria": "Audio",
+    "descripcion": "Audífonos inalámbricos con cancelación activa de ruido híbrida, drivers de 40 mm y batería de 35 horas.",
+    "precio": 389000,
+    "stock": 14,
+    "imagen": "/assets/img/articulo-01.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Teclado Mecánico TKL RGB Switches Red",
+    "categoria": "Periféricos",
+    "descripcion": "Teclado compacto 80% con switches lineales silenciosos, keycaps PBT doble inyección y cable USB-C desmontable.",
+    "precio": 265000,
+    "stock": 18,
+    "imagen": "/assets/img/articulo-02.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Mouse Ergonómico Inalámbrico 16000 DPI",
+    "categoria": "Periféricos",
+    "descripcion": "Sensor óptico de alta precisión, diseño vertical anti-fatiga, 6 botones programables y receptor USB + Bluetooth.",
+    "precio": 175000,
+    "stock": 22,
+    "imagen": "/assets/img/articulo-03.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor IPS 27 Pulgadas QHD 144Hz",
+    "categoria": "Monitores",
+    "descripcion": "Panel IPS 2560x1440 con tiempo de respuesta de 1 ms, cobertura 99% sRGB, HDR10 y soporte ajustable en altura.",
+    "precio": 1190000,
+    "stock": 7,
+    "imagen": "/assets/img/articulo-04.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Unidad SSD NVMe M.2 1TB Gen4",
+    "categoria": "Almacenamiento",
+    "descripcion": "Almacenamiento de estado sólido PCIe 4.0 con velocidades de lectura de hasta 5000 MB/s y disipador térmico integrado.",
+    "precio": 340000,
+    "stock": 19,
+    "imagen": "/assets/img/articulo-05.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "Cámara Web Full HD 1080p 60fps con Micrófono Dual",
+    "categoria": "Video y Streaming",
+    "descripcion": "Enfoque automático rápido, corrección de poca luz, tapa de privacidad física y clip universal para monitor.",
+    "precio": 210000,
+    "stock": 15,
+    "imagen": "/assets/img/articulo-06.webp"
+  },
+  {
+    "id": 7,
+    "nombre": "Micrófono Condensador USB Cardioide",
+    "categoria": "Audio",
+    "descripcion": "Ideal para reuniones, podcast y streaming. Incluye filtro antipop, soporte amortiguador y control de ganancia.",
+    "precio": 245000,
+    "stock": 11,
+    "imagen": "/assets/img/articulo-07.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "Hub Multipuerto USB-C 8 en 1 HDMI 4K",
+    "categoria": "Accesorios",
+    "descripcion": "Adaptador de aluminio con salida HDMI 4K@60Hz, carga rápida Power Delivery 100W, Ethernet Gigabit y 3 puertos USB 3.0.",
+    "precio": 155000,
+    "stock": 25,
+    "imagen": "/assets/img/articulo-08.webp"
+  },
+  {
+    "id": 9,
+    "nombre": "Base Refrigerante para Portátil hasta 17 Pulgadas",
+    "categoria": "Accesorios",
+    "descripcion": "Cinco ventiladores silenciosos con control de velocidad, 5 niveles de inclinación ergonómica y doble puerto USB.",
+    "precio": 115000,
+    "stock": 20,
+    "imagen": "/assets/img/articulo-09.webp"
+  },
+  {
+    "id": 10,
+    "nombre": "Disco Duro Externo Portátil 2TB USB 3.2",
+    "categoria": "Almacenamiento",
+    "descripcion": "Respaldo portátil ultradelgado compatible con Windows, macOS y Linux sin necesidad de fuente externa.",
+    "precio": 310000,
+    "stock": 16,
+    "imagen": "/assets/img/articulo-10.webp"
+  },
+  {
+    "id": 11,
+    "nombre": "Router Wi-Fi 6 AX3000 Doble Banda",
+    "categoria": "Redes",
+    "descripcion": "Cobertura de alta velocidad con tecnología OFDMA, 4 antenas de alta ganancia, seguridad WPA3 y control parental.",
+    "precio": 360000,
+    "stock": 9,
+    "imagen": "/assets/img/articulo-11.webp"
+  },
+  {
+    "id": 12,
+    "nombre": "Tablet Gráfica Digitalizadora 10x6 Pulgadas",
+    "categoria": "Periféricos",
+    "descripcion": "Lápiz sin batería con 8192 niveles de presión, 8 teclas de acceso rápido personalizables para diseño e ilustración.",
+    "precio": 280000,
+    "stock": 10,
+    "imagen": "/assets/img/articulo-12.webp"
+  },
+  {
+    "id": 13,
+    "nombre": "Parlantes Estéreo de Escritorio 2.0 USB",
+    "categoria": "Audio",
+    "descripcion": "Sonido claro con radiadores pasivos de graves, control de volumen frontal y entrada auxiliar de 3.5 mm.",
+    "precio": 98000,
+    "stock": 24,
+    "imagen": "/assets/img/articulo-13.webp"
+  },
+  {
+    "id": 14,
+    "nombre": "Brazo Articulado para Monitor 17 a 32 Pulgadas",
+    "categoria": "Monitores",
+    "descripcion": "Soporte de pistón a gas con gestión oculta de cables, rotación de 360° e instalación mediante prensa o ojal.",
+    "precio": 185000,
+    "stock": 13,
+    "imagen": "/assets/img/articulo-14.webp"
+  },
+  {
+    "id": 15,
+    "nombre": "Memoria RAM DDR4 16GB (2x8GB) 3200MHz",
+    "categoria": "Componentes",
+    "descripcion": "Módulos de alto rendimiento con disipador de calor de aluminio de perfil bajo y compatibilidad XMP 2.0.",
+    "precio": 220000,
+    "stock": 17,
+    "imagen": "/assets/img/articulo-15.webp"
+  },
+  {
+    "id": 16,
+    "nombre": "Cargador Rápido GaN 65W Triple Puerto",
+    "categoria": "Accesorios",
+    "descripcion": "Tecnología de nitruro de galio compacto con 2 puertos USB-C y 1 USB-A para cargar laptop, tablet y celular simultáneamente.",
+    "precio": 135000,
+    "stock": 21,
+    "imagen": "/assets/img/articulo-16.webp"
+  },
+  {
+    "id": 17,
+    "nombre": "Mousepad XXL Escritorio Impermeable 90x40 cm",
+    "categoria": "Periféricos",
+    "descripcion": "Superficie microtexturizada de alta precisión, bordes cosidos reforzados y base de caucho natural antideslizante.",
+    "precio": 65000,
+    "stock": 30,
+    "imagen": "/assets/img/articulo-17.webp"
+  },
+  {
+    "id": 18,
+    "nombre": "Lámpara Barra LED para Monitor Anti-Reflejo",
+    "categoria": "Accesorios",
+    "descripcion": "Iluminación asimétrica sin reflejos en pantalla, ajuste táctil de temperatura de color (3000K-6500K) y brillo.",
+    "precio": 145000,
+    "stock": 12,
+    "imagen": "/assets/img/articulo-18.webp"
+  },
+  {
+    "id": 19,
+    "nombre": "Repetidor Extensor de Rango Wi-Fi AC1200",
+    "categoria": "Redes",
+    "descripcion": "Elimina zonas muertas de señal en el hogar u oficina, incluye puerto Ethernet y configuración rápida por botón WPS.",
+    "precio": 125000,
+    "stock": 15,
+    "imagen": "/assets/img/articulo-19.webp"
+  },
+  {
+    "id": 20,
+    "nombre": "Estuche Rígido Organizador de Cables y Gadgets",
+    "categoria": "Accesorios",
+    "descripcion": "Carcasa resistente a salpicaduras con compartimentos acolchados para discos externos, cargadores y memorias USB.",
+    "precio": 59000,
+    "stock": 28,
+    "imagen": "/assets/img/articulo-20.webp"
+  }
+]

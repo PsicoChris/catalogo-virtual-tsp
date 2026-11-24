@@ -1,0 +1,12 @@
+{
+  "name": "catalogo-virtual-tsp",
+  "version": "1.0.0",
+  "description": "Catálogo virtual desarrollado bajo el marco metodológico TSPi - Politécnico Grancolombiano",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
