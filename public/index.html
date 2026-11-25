@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechShop TSPi – Catálogo Virtual</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <h1>TechShop TSPi</h1>
+        <span>Grupo B04 / Equipo 6 – Catálogo Virtual</span>
+      </div>
+
+      <!-- Módulo 2: Búsqueda Básica por Nombre -->
+      <div class="search-basic">
+        <input
+          type="text"
+          id="inputBusquedaNombre"
+          placeholder="Buscar artículo por nombre (ej. teclado, monitor, SSD)..."
+        />
+        <button id="btnLimpiarFiltros" class="btn btn-secondary" type="button">Limpiar</button>
+      </div>
+
+      <!-- Módulo 1: Registro e Inicio de Sesión -->
+      <div class="auth-box" id="authBox">
+        <button id="btnAbrirAuth" class="btn btn-primary" type="button">Iniciar sesión / Registrarse</button>
+      </div>
+      <div class="user-box hidden" id="userBox">
+        <span id="nombreUsuarioLabel"></span>
+        <button id="btnLogout" class="btn btn-secondary" type="button">Salir</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-layout">
+    <section class="catalog-section">
+      <!-- Módulo 3: Búsqueda Avanzada -->
+      <div class="filters-card">
+        <h2>Búsqueda avanzada</h2>
+        <div class="filters-grid">
+          <div class="field">
+            <label for="selectCategoria">Categoría</label>
+            <select id="selectCategoria">
+              <option value="todas">Todas las categorías</option>
+              <option value="Audio">Audio</option>
+              <option value="Periféricos">Periféricos</option>
+              <option value="Monitores">Monitores</option>
+              <option value="Almacenamiento">Almacenamiento</option>
+              <option value="Video y Streaming">Video y Streaming</option>
+              <option value="Accesorios">Accesorios</option>
+              <option value="Redes">Redes</option>
+              <option value="Componentes">Componentes</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="inputPrecioMin">Precio mínimo (COP)</label>
+            <input type="number" id="inputPrecioMin" min="0" step="1000" placeholder="0" />
+          </div>
+
+          <div class="field">
+            <label for="inputPrecioMax">Precio máximo (COP)</label>
+            <input type="number" id="inputPrecioMax" min="0" step="1000" placeholder="2000000" />
+          </div>
+
+          <div class="field field-checkbox">
+            <label>
+              <input type="checkbox" id="checkSoloDisponibles" />
+              Solo con stock disponible
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog-header">
+        <h2 id="tituloCatalogo">Catálogo de Artículos</h2>
+        <span id="contadorArticulos" class="badge">0 artículos</span>
+      </div>
+
+      <!-- Módulo 4 y 5: Catálogo de 20+ Artículos y Compra por Artículo -->
+      <div id="gridArticulos" class="grid-articulos"></div>
+    </section>
+
+    <!-- Módulo 6: Carro de Compras -->
+    <aside class="cart-sidebar">
+      <h2>Carro de Compras</h2>
+      <div id="carritoContenido" class="cart-content">
+        <p class="muted">Inicia sesión para ver y gestionar tu carrito de compras.</p>
+      </div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Total de artículos:</span>
+          <strong id="carritoTotalCantidad">0</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total a pagar:</span>
+          <strong id="carritoTotalPagar">$0</strong>
+        </div>
+        <button id="btnConfirmarPedido" class="btn btn-success btn-full" type="button" disabled>
+          Confirmar pedido
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal Módulo 4: Vista Ampliada del Artículo al hacer clic en la imagen -->
+  <div id="modalDetalle" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="btnCerrarModal" class="modal-close" type="button">&times;</button>
+      <div class="modal-body">
+        <img id="modalImagen" src="" alt="" class="modal-img" />
+        <div class="modal-info">
+          <span id="modalCategoria" class="chip"></span>
+          <h3 id="modalNombre"></h3>
+          <p id="modalDescripcion" class="modal-desc"></p>
+          <p class="modal-price" id="modalPrecio"></p>
+          <p class="modal-stock" id="modalStock"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Módulo 1: Registro / Inicio de Sesión -->
+  <div id="modalAuth" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card modal-auth-card">
+      <button id="btnCerrarAuth" class="modal-close" type="button">&times;</button>
+      <div class="auth-tabs">
+        <button id="tabLogin" class="tab-btn active" type="button">Iniciar sesión</button>
+        <button id="tabRegistro" class="tab-btn" type="button">Registrarse</button>
+      </div>
+
+      <form id="formLogin" class="auth-form">
+        <div class="field">
+          <label for="loginEmail">Correo electrónico</label>
+          <input type="email" id="loginEmail" required placeholder="cliente@correo.com" />
+        </div>
+        <div class="field">
+          <label for="loginPassword">Contraseña</label>
+          <input type="password" id="loginPassword" required placeholder="Tu contraseña" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+      </form>
+
+      <form id="formRegistro" class="auth-form hidden">
+        <div class="field">
+          <label for="regNombre">Nombre completo</label>
+          <input type="text" id="regNombre" required placeholder="Tu nombre" />
+        </div>
+        <div class="field">
+          <label for="regEmail">Correo electrónico</label>
+          <input type="email" id="regEmail" required placeholder="cliente@correo.com" />
+        </div>
+        <div class="field">
+          <label for="regPassword">Contraseña (mín. 6 caracteres)</label>
+          <input type="password" id="regPassword" minlength="6" required placeholder="Mínimo 6 caracteres" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Crear cuenta</button>
+      </form>
+
+      <p id="authMensaje" class="auth-msg"></p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
